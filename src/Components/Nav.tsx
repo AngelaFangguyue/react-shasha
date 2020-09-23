@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+
 import {Icon} from './Icon';
 
 const Wrapper = styled.nav`
