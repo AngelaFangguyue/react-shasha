@@ -362,6 +362,17 @@ module.exports = function(webpackEnv) {
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {
+              test: /\.svg$/,
+              use: [
+                { loader: 'svg-sprite-loader', options: {} },
+                {loader:'svgo-loader',options: {
+                    plugins: [
+                      {removeAttrs: { attrs: 'fill'}},
+                    ]
+                  }}
+              ]
+            },
+            {
               test: /\.(js|mjs|jsx|ts|tsx)$/,
               include: paths.appSrc,
               loader: require.resolve('babel-loader'),

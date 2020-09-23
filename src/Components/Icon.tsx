@@ -4,6 +4,10 @@ import styled from 'styled-components';
 let importAll = (requireContext: __WebpackModuleApi.RequireContext) => requireContext.keys().forEach(requireContext);
 try {importAll(require.context('icons', true, /\.svg$/));} catch (error) {console.log(error);}
 
+// let importAll = (requireContext: any) => requireContext.keys().forEach(requireContext);
+// try {importAll(require.context('icons', true, /\.svg$/));} catch (error) {console.log(error);}
+
+
 type Props = {
   name: string;
 }
