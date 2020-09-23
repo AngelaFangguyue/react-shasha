@@ -1,3 +1,8 @@
+极简记账 React 版
+一款基于 React、React Router、自定义Hooks、TypeScript、LocalStorage 实现的简单又好看的记账应用
+特点是一键极速记账
+在项目中遇到了很多零零散散的知识，React Router，styled-components 的 CSS 方案，引入 svg 并封装，消除重复，封装的练习，React 函数组件，TypeScript，自定义 Hook，localStorage
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
